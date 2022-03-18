@@ -53,3 +53,31 @@ Bonus:
 Create a script (or a Hardhat task) to query the total amount of ETH held in the contract.
 
 _You can use any library you prefer: Ethers.js, Web3.js, Web3.py, eth-brownie_
+
+## B) Guide
+
+### 1) Deployment
+```
+npx hardhat run --network [NETWORK_NAME] scripts/deploy.ts
+```
+
+**Verification**
+```
+npx hardhat verify --network [NETWORK_NAME] [ADDRESS_OF_DEPLOYED_CONTRACT]
+```
+
+### 2) Test
+```
+npx hardhat test
+```
+
+**Coverage**
+```
+npx hardhat coverage
+```
+
+### 3) Tasks
+Run the task to query the total amount of ETH held in the contract.
+```
+eth-balance --pool [ADDRESS_OF_DEPLOYED_CONTRACT]
+```

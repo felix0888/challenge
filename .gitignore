@@ -1,0 +1,26 @@
+# Ignore node stuff
+node_modules/
+package-lock.json
+yarn-error.log
+
+# Ignore build stuff
+artifacts/
+cache/
+coverage/
+coverage.json
+build/
+dist/
+
+# Buidler cache
+cached/
+
+# Ignore solc bin output
+bin/
+
+# Others
+.env
+.DS_Store
+.vscode
+
+# Reports
+/reports
